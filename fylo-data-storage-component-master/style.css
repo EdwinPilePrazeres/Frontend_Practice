@@ -2,25 +2,285 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+    font-family: 'Raleway', sans-serif;
 }
-.container {
-    background: linear-gradient(to bottom, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    width: 90vw;
-    height: 90vh;
-    border: 2px solid black;
+/*----------Mobile onfiguration-----------------*/
+.container-mobile {
+    background: rgb(2,0,36);
+    background: linear-gradient(173deg, rgba(2,0,36,1) 0%, rgba(35,35,133,1) 26%, rgba(0,212,255,1) 67%);
+
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
-.caja1{
-    width: 400px;
-    height: 200px;
-    border: 1px solid black;
+.caja1__mobile{
+    height: 180px;
+    width: 85%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(228, 56%, 26%);
+    display: grid;
+    border-top-right-radius: 35%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+
+
 }
-.caja2 {
-    width: 700px;
-    height: 200px;
-    border: 1px solid black;
+
+.caja1__mobile-images {
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo  blank blank blank blank blank"
+    "document folder cloud blank blank blank blank blank";
+    
+}
+.document:hover, .folder:hover, .cloud:hover {
+    cursor: pointer;
+}
+.document, .folder, .cloud {
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;  
+    width: 20px;  
+}
+.logo {
+    grid-area: logo;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.document {
+    grid-area: document;
+    background-color:hsl(229, 57%, 11%) ;
+    margin-left: 30px;
+    
+}
+.folder {
+    grid-area: folder;
+    background-color:hsl(229, 57%, 11%) ;
+
+}
+.cloud {
+    grid-area: cloud;
+    background-color:hsl(229, 57%, 11%) ;
+    
+}
+
+.caja2__mobile {
+    height: 150px;
+    background-color:  hsl(228, 56%, 26%);
+    color: #fff;
+    text-align: center;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 85%;
+    border-radius: 5%;
+    
+}
+.caja2__mobile-contenido {
+    padding: 20px;
+
+}
+
+.caja2__mobile-contenido p:nth-child(2) {
+    width: fit-content;
+    display: inline-block;
+    margin-right: 65%;
+    font-size: .8em;
+}
+.caja2__mobile-contenido p:nth-child(3) {
+    width: fit-content;
+    display: inline-block;
+    font-size: .8em;   
+    
+}
+
+.slidecontainer {
+    margin-top: 20px;
+    border-radius: 5%;
+    border-radius: 10px;
+ 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    outline: none;
+
+  }
+  
+
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: hsl(243, 100%, 93%);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+.resultado {
+    width: 40vw;
+    height: 70px;
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: -15px;
+    color: #000;
+}
+.resultado span {
+    font-size: 2em;
+    font-style: bold;
 }
 
 
+/*----------Desktop onfiguration-----------------*/
+
+
+.container-desktop {
+    background: rgb(2,0,36);
+    background: linear-gradient(173deg, rgba(2,0,36,1) 0%, rgba(35,35,133,1) 26%, rgba(0,212,255,1) 67%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: center;   
+
+
+}
+
+
+.caja1__desktop{
+    height: 180px;
+    width: 300px;
+    margin: 5px;
+    background-color: hsl(228, 56%, 26%);
+    display: grid;
+    border-top-right-radius: 35%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+}
+
+.caja1__desktop-images {
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo  blank blank blank blank blank"
+    "document folder cloud blank blank blank blank blank";
+    
+}
+/* lo comento porque se repite
+.document:hover, .folder:hover, .cloud:hover {
+    cursor: pointer;
+}
+.document, .folder, .cloud {
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;  
+    width: 20px;  
+}
+.logo {
+    grid-area: logo;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.document {
+    grid-area: document;
+    background-color:hsl(229, 57%, 11%) ;
+    margin-left: 30px;
+    
+}
+.folder {
+    grid-area: folder;
+    background-color:hsl(229, 57%, 11%) ;
+
+}
+.cloud {
+    grid-area: cloud;
+    background-color:hsl(229, 57%, 11%) ;
+    
+}*/
+
+.caja2__desktop {
+    height: 120px;
+    background-color:  hsl(228, 56%, 26%);
+    color: #fff;
+    text-align: left;
+    width: 500px;
+    border-radius: 10px;
+    margin: 5px;
+  
+
+}
+.caja2__desktop-contenido {
+    padding: 20px;
+
+}
+.caja2__desktop-contenido p:first-child {
+    margin-left: 10%;
+}
+.caja2__desktop-contenido p:nth-child(2) {
+    width: fit-content;
+    display: inline-block;
+    margin-right: 75%;
+    font-size: .8em;
+}
+.caja2__desktop-contenido p:nth-child(3) {
+    width: fit-content;
+    display: inline-block;
+    font-size: .8em;   
+    
+}
+.resultado_desktop {
+    width: 250px;
+    height: 70px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: #000;
+}
+.resultado_desktop span {
+    font-size: 3em;
+    font-style: italic;
+}
+/*----------media configuration-----------------*/
+@media screen and (max-width: 375px) {
+    .container-desktop {
+        display: none;        
+    }
+}
+
+@media screen and (min-width:376px) {
+    .container-mobile {
+        display: none;
+    }
+}
 
