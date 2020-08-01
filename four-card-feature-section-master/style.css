@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    line-height: 1.6;
+}
+
+.Container__mobile {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background: hsl(0, 0%, 98%);
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-item {
+
+    height: 20vh;
+    width: 80%;
+    margin: 20px auto;
+
+}
+.Encabezado {
+    background-color: inherit;
+    text-align: center;
+    line-height: 1.6;
+    padding: 10px;
+    color: gray;
+    margin-top: 50px;
+}
+/*------------ general configuration --------*/
+.Encabezado p, .Encabezado-desktop p {
+    font-size: .8em;
+    text-align: justify;
+    padding: 20px;
+    
+}
+
+.Encabezado h2:nth-child(2), .Encabezado-desktop h2:nth-child(2), .Supervisor h2, .Team_Builder h2, .Karma h2, .Calculator h2, .Supervisor-desktop h2, .Team_Builder-desktop h2, .Karma-desktop h2, .Calculator-desktop h2  {
+    color: black;
+
+}
+
+.Supervisor, .Supervisor-desktop {
+    border-top: 2px solid hsl(180, 62%, 55%) ;
+}
+.Team_Builder, .Team_Builder-desktop {
+    border-top: 2px solid hsl(0, 78%, 62%) ;
+}
+.Karma, .Karma-desktop {
+    border-top: 2px solid hsl(34, 97%, 64%) ;
+}
+.Calculator, .Calculator-desktop {
+    border-top: 2px solid hsl(212, 86%, 64%) ;
+}
+.Supervisor, .Team_Builder, .Karma, .Calculator, .Supervisor-desktop, .Team_Builder-desktop, .Karma-desktop, .Calculator-desktop {
+  
+    -webkit-box-shadow: -1px 9px 27px 0px rgba(133,133,133,0.65);
+    -moz-box-shadow: -1px 9px 27px 0px rgba(133,133,133,0.65);
+    box-shadow: -1px 9px 27px 0px rgba(133,133,133,0.65);
+    display: grid;
+}
+.Supervisor_sub, .Team_Builder_sub, .Karma_sub, .Calculator_sub, .Supervisor_sub-desktop, .Team_Builder_sub-desktop, .Karma_sub-desktop, .Calculator_sub-desktop {
+    padding: 20px;
+   
+}
+p{
+    font-size: .8em;
+}
+
+.imagen{
+    justify-self: end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+img {
+    height: 50px;
+}
+/*------------ desktop configuration --------*/
+.Container__desktop {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid black;
+   
+
+}
+.grid-items {
+    
+    margin: 10px;
+    display: grid;
+}
+.Encabezado-desktop {
+    grid-column: 1 /span 5;
+    text-align: center;
+    width: 400px;
+    justify-self: center;
+    margin-top: 30px;
+    
+}
+.Supervisor-desktop {
+    grid-row: 3/5;
+    grid-column: 2/3;
+    width: 280px;
+    height: 180px;
+    
+}
+.Team_Builder-desktop {
+    grid-column:  3/4;
+    grid-row: 2/4;
+    width: 280px;
+    height: 180px;
+}
+.Karma-desktop {
+    grid-row: 4/6;
+    grid-column:3/4;
+    width: 280px;
+    height: 180px;
+}
+.Calculator-desktop {
+    grid-row: 3/5;
+    grid-column: 4/5;
+    width: 280px;
+    height: 180px;
+}
+
+
+
+/*------------ media configuration --------*/
+@media screen and (max-width: 375px) {
+    .Container__desktop {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 376px) {
+    .Container__mobile {
+        display: none;
+    }
+}
