@@ -239,3 +239,17 @@
     }
 
 }
+@media screen and (min-width:2560px) {
+    .desktop-section-1 {
+        width: 70vw;
+        border: 1px solid black;
+        margin: auto;
+    }
+    .imagen_section {
+        width: 30vw;
+    }
+    .desktop-section-1 {
+        justify-content: space-evenly;
+    }
+    
+}
