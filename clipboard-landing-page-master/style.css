@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100%;
+}
+.header {
+    width: 100%;
+    height: 20vh;
+    background-image: url("images/bg-header-mobile.png");
+}
+.header_sub {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.logo-header {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+    width: fit-content;
+    margin-top: 30px;
+}
+.header img {
+    width: 100px;
+}
+
+.section {
+    padding: 20px;
+}
+.section h2 {
+    color: darkslategrey;
+    text-align: center;
+}
+
+.section p {
+    color: rgb(172, 172, 173);
+    font-size: small;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.submit_iOS {
+    background: rgb(37, 190, 165);
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: rgb(36, 161, 141);
+    -webkit-box-shadow: 0px 10px 19px 0px rgb(36, 161, 141);
+    -moz-box-shadow: 0px 10px 19px 0px rgb(36, 161, 141);
+    box-shadow: 0px 10px 19px 0px rgb(36, 161, 141);
+}
+.submit_iOS:focus {
+    cursor: pointer;
+    background: rgb(28, 204, 186);
+}
+.submit_Mac {
+    background: rgb(68, 84, 207);
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: rgb(97, 115, 250);
+    -webkit-box-shadow: 0px 10px 19px 0px rgb(97, 115, 250);
+    -moz-box-shadow: 0px 10px 19px 0px rgb(97, 115, 250);
+    box-shadow: 0px 10px 19px 0px rgb(97, 115, 250);
+    margin-bottom: 100px;
+}
+.submit_Mac:focus {
+    cursor: pointer;
+    background: rgb(97, 115, 250);
+}
+
+.imagen_section {
+    width: 85vw;
+    margin: 30px auto;
+}
+.imagen_section-b {
+    text-align: center;
+}
+.section_space {
+    margin-top: 100px;
+}
+.icon_section {
+ 
+    margin: 25px auto;
+    text-align: center;
+}
+.icon_section-1 {
+    margin: 25px auto;
+    
+}
+.desktop-section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desktop-section-3 img {
+    width: 40vw;
+    margin: 0 20px;
+}
+
+.footer {
+    background: rgb(239, 239, 239);
+    text-align: center;
+}
+.icon_section-1 img {
+    margin-top: 35px;
+    height: 50px;
+}
+.footer a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 20px;
+    color:rgb(139, 134, 134);
+    text-align: center;
+
+}
+.redes_sociales {
+    text-align: center;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    padding:  20px ;
+
+}
+.redes_sociales img {
+    padding:  0 20px;
+}
+
+@media screen and (max-width:1023px) {
+    .h2-desktop {
+        display: none;
+    }
+    .p-desktop {
+        display: none;
+    }
+    .desktop-section-3 img {
+        width: 30vw;
+        margin: 0 20px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1439px) {
+    .header {
+        background-image: url("images/bg-header-desktop.png");
+    }
+
+}
+@media screen and (min-width:1024px) {
+    .h2-mobile {
+        display: none;
+    }
+    .p-mobile {
+        display:none;
+    }
+    .submit_iOS {
+        display: inline-block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .submit_Mac {
+        display: inline-block;
+        width: 30%;
+        margin-right: 15px;
+    }
+    .submit-box {
+        text-align: center;
+    }
+    .desktop-section-1 {
+  
+        display: flex;
+        flex-direction: row;
+    }
+    .imagen_section {
+        width: 60vw;
+    }
+    .desktop-section-inside {
+        margin-top: 5vh;
+    }
+    .desktop-section-inside p {
+        text-align: left;
+        padding-left: 5vw;
+    }
+    .desktop-section-inside h2 {
+        text-align: start;
+        padding-left: 20px;
+    }
+    .section p {
+        color: rgb(172, 172, 173);
+        font-size: initial;
+        line-height: 1.6;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .desktop-section-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .desktop-section-3 {
+        display: flex;
+        flex-direction: row;
+    }
+    .icon_section-1 {
+        display: inline-block;
+    }
+    .desktop-section-3 img {
+        width: 70%;
+    }
+    .footer {
+        text-align: center;
+    }
+    
+
+
+}
+@media screen and (min-width:1440px) {
+    .header {
+        height: 25vh;
+        background-image: url("images/bg-header-desktop.png");
+    }
+
+}
