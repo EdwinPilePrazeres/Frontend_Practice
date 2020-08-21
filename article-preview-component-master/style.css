@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.9;
+    font-family: 'Manrope', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(237, 242, 248);
+}
+
+.main {
+    background: #fff;
+    width: 60vw;
+    height: 25vh;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.image img {
+    height:  100%;
+    width: 100%;
+
+}
+.cuerpo {
+    padding: 20px;
+}
+.comentario {
+    height: 70%;
+}
+
+.comentario p {
+    font-size: .8em;
+}
+.author {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    padding-top: 10px;
+    justify-content: left;
+    
+}
+.author img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+}
+.author p, b {
+    margin-right: 10px;
+}
+
+
+.wrapper {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translateX(-50%, -50%);
+}
+
+.toggle_button {
+    height: 65px;
+    border-radius: 50px ;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    
+
+}
+.toggle_button ul li a {
+    display: flex;
+    
+    height: 65px;
+    align-items: center;
+    padding: 0 35px;
+   
+
+}
+.toggle_button ul li a.share_btn {
+    justify-content: center;
+} 
+.toggle_button ul li a.share_btn .icon {
+    width: 35px;
+    height: 35px;
+   
+    border-radius: 50%;
+    transition: all 1s ease;
+    position: relative;
+    background-color: rgb(230, 231, 231);
+    color: #fff;
+}
+.toggle_button ul li a .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    
+
+}
+
+.toggle_button ul li a.sm .icon{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    
+}
+
+.toggle_button.active {
+    height: 260px;
+    background-color: rgb(73, 85, 107);
+}
+
+
+@media screen and (max-width: 425px) {
+    .main {
+        
+        flex-flow: column;
+        height: 500px;
+        width: 80vw;
+
+    }
+
+    .image {
+        height: 50%;
+        width: 100%;
+    }
+    
+    .wrapper {
+        
+        top: 85%;
+        left: 65%;
+    }
+    
+    
+}
