@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(119,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__mobile {
+    width: 375px;
+    margin: auto;
+    display: flexbox;
+}
+
+.logo {
+    height: 5vh;
+    padding: 10px;
+
+}
+.logo img {
+    height: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.foto img {
+    width: 100%;
+}
+
+.section {
+    margin: 40px 20px;
+    color: hsl(0, 36%, 70%);
+    text-align: center;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+.titulo {
+    margin: 15px;
+}
+.section h1 span, h2 span {
+    font-size: 2.5em;
+    letter-spacing: 7px;
+    
+}
+.section h1 span {
+    font-weight: 300;
+}
+.section h2 span {
+    color: black;
+    
+}
+.comentario p{
+    line-height: 1.6;
+    font-size: .8em;
+    margin: 0 15px;
+}
+
+
+.section .form {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+input[type=email] {
+    border: none;
+    text-decoration: none;
+    font-size: small;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 13px;
+    width: 80%;
+    
+}
+input[type=email]:active{
+    border: none;
+    text-decoration: none;
+}
+.form .button-position {
+    position: absolute;
+    top: 0;
+    left: 75%;
+
+}
+.form .button {
+    background-color: hsl(0, 93%, 68%);
+    width: 65px;
+    height: 42px;
+    border-radius: 50px;
+    position: relative;
+}
+.form .button img {
+    position: absolute;
+    top: 28%;
+    left: 42%;
+
+}
+.form .button-position .button:hover {
+    background-color: hsl(0, 74%, 82%) !important;
+}
+.button-position:hover {
+    cursor: pointer;
+    
+}
+.error {
+    position: absolute;
+    top: 26%;
+    left: 69%;
+    display: none;
+}
+.error img {
+    height: 18px;
+}
+
+/****************************************************************************** 
+desktop config
+
+*/
+
+.container__desktop {
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "logo-desktop    foto-desktop foto-desktop" 
+    "section-desktop foto-desktop foto-desktop" 
+    "section-desktop foto-desktop foto-desktop" 
+    ;
+    
+}
+
+.foto-desktop {
+    grid-area: foto-desktop;
+}
+.foto-desktop img{
+    height: 100%;
+    margin-left: 5vw ;
+}
+.logo-desktop {
+    grid-area: logo-desktop;
+    margin-left: 15px;
+}
+.logo-desktop img {
+    height: 30px;
+    margin: auto;
+}
+.section-desktop {
+    grid-area: section-desktop;
+    color: hsl(0, 36%, 70%);
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 40vw;
+    margin-top: -250px;
+}
+
+.section-desktop h1 span, h2 span {
+    font-size: 3.5em;
+    letter-spacing: 7px;
+    
+}
+.section-desktop h1 span {
+    font-weight: 300;
+}
+.section-desktop h2 span {
+    color: black;
+}
+.section-desktop p {
+    font-size: 1em;
+}
+.header-desktop {
+    display: flex;
+    align-items: center;
+}
+.section-desktop .form {
+    position: relative;
+    width: 75%;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .container__mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container__desktop {
+        display: none;
+    }
+}
